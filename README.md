@@ -1,4 +1,4 @@
-# @sofunny/files-previewer
+# @wongchisum/files-previewer
 
 实现附件链接的在线预览
 
@@ -18,7 +18,7 @@ PDF:
 
 ```tsx
 import React from 'react';
-import { PDFPreviewer } from '@sofunny/files-previewer';
+import { PDFPreviewer } from '@wongchisum/files-previewer';
 
 const link =
   '/pdfApi/wojtekmaj/react-pdf/d2ee43b13abb98a11e23ba113a6ac0d108f24424/sample/create-react-app-5/public/sample.pdf';
@@ -30,7 +30,7 @@ TXT:
 
 ```tsx
 import React from 'react';
-import { PlainTextPreviewer } from '@sofunny/files-previewer';
+import { PlainTextPreviewer } from '@wongchisum/files-previewer';
 
 const link = '/textApi/home/down/txt/id/31878';
 
@@ -42,7 +42,7 @@ DOCX:
 
 ```tsx
 import React from 'react';
-import { DOCXPreviewer } from '@sofunny/files-previewer';
+import { DOCXPreviewer } from '@wongchisum/files-previewer';
 
 const link =
   '/docApi/OpenFile2.aspx?Url=/Upload/Content/381/Attach/636504885264821434_2_22369.docx';
@@ -54,7 +54,7 @@ EXCEL:
 
 ```tsx
 import React from 'react';
-import { XLSXPreviewer } from '@sofunny/files-previewer';
+import { XLSXPreviewer } from '@wongchisum/files-previewer';
 
 const link = '/excelApi/jyj/260491/260514/1079243/2021072118161979607.xls';
 
