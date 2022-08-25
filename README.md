@@ -9,7 +9,7 @@
 安装依赖
 
 ```bash
-$ npm i @sofunny/files-previewer
+$ npm i @wongchisum/files-previewer
 ```
 
 ## 使用示例
@@ -138,3 +138,9 @@ $ npm run build
 - [ ] PDF缺陷： 目前禁用文字选中，因为使用的依赖react-pdf的文字选中区域有缺陷
 
 - [ ] Word缺陷： 目前Word文档的预览没有分页，因为使用的依赖docx-preview不支持
+
+---
+
+## 变更
+
+- [ ] v0.0.3： 修复由于编码问题解析txt文件出现乱码,前端增加编码的判断和解析

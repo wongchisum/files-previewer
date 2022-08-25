@@ -9,6 +9,7 @@ specifiers:
   '@types/react-pdf': ^5.7.2
   '@umijs/fabric': ^2.8.1
   '@umijs/test': ^3.0.5
+  detect-file-encoding-and-language: ^2.2.2
   docx-preview: ^0.1.11
   dumi: ^1.1.0
   father: ^4.0.0-rc.2
@@ -24,6 +25,7 @@ specifiers:
 
 dependencies:
   '@shirai91/react-pdf-forked': 5.7.6_react@18.2.0
+  detect-file-encoding-and-language: 2.2.2
   docx-preview: 0.1.11
   react-data-grid: 7.0.0-beta.16_react@18.2.0
   react-pdf: 6.0.0-beta.3_react@18.2.0
@@ -5159,6 +5161,11 @@ packages:
       inherits: 2.0.4
       minimalistic-assert: 1.0.1
     dev: true
+
+  /detect-file-encoding-and-language/2.2.2:
+    resolution: {integrity: sha512-c+5ALStTqKi8BSN7GWFnOdhHUYXd+yKYLWNV2LPE66UAL8XfYZMqE9DdfrD9f8JHedJ3ZIlROYoUqcomVn92MQ==}
+    hasBin: true
+    dev: false
 
   /detect-indent/6.1.0:
     resolution: {integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==}
