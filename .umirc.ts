@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'files-previewer',
+  title: '@wongchisum/files-previewer',
   logo: 'https://www.xmfunny.com/img/bannel-games-i.png',
   outputPath: 'docs-dist',
   proxy: {
@@ -14,6 +14,11 @@ export default defineConfig({
       target: 'https://raw.githubusercontent.com/',
       changeOrigin: true,
       pathRewrite: { '^/pdfApi': '' },
+    },
+    '/nextPDFApi': {
+      target: 'https://www.chp.gov.hk/',
+      changeOrigin: true,
+      pathRewrite: { '^/nextPDFApi': '' },
     },
     '/textApi': {
       target: 'http://txt.bookshuku.com/',

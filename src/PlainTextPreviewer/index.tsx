@@ -14,12 +14,12 @@ export default function PlainTextPreviewer({ link }: PreviewerProps) {
     const read = new FileReader();
     read.readAsText(blob as Blob, encodeType);
     read.onload = function (event) {
-      setText(event?.target?.result as string)
-      setLoading(false)
+      setText(event?.target?.result as string);
+      setLoading(false);
     };
     read.onerror = function () {
-      setError("文本解析失败")
-      setLoading(false)
+      setError('文本解析失败');
+      setLoading(false);
     };
   }
 
