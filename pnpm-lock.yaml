@@ -1,9 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^4.7.0
+  '@react-pdf-viewer/core': ^3.7.0
+  '@react-pdf-viewer/default-layout': ^3.7.0
+  '@react-pdf-viewer/locales': ^1.0.0
   '@shirai91/react-pdf-forked': ^5.7.6
   '@testing-library/jest-dom': ^5.15.1
   '@testing-library/react': ^13.0.0
+  '@types/fabric': ^4.5.12
   '@types/jest': ^27.0.3
   '@types/react': ^18.0.17
   '@types/react-pdf': ^5.7.2
@@ -24,6 +29,10 @@ specifiers:
   yorkie: ^2.0.0
 
 dependencies:
+  '@ant-design/icons': 4.7.0_react@18.2.0
+  '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+  '@react-pdf-viewer/default-layout': 3.7.0_react@18.2.0
+  '@react-pdf-viewer/locales': 1.0.0
   '@shirai91/react-pdf-forked': 5.7.6_react@18.2.0
   detect-file-encoding-and-language: 2.2.2
   docx-preview: 0.1.11
@@ -34,6 +43,7 @@ dependencies:
 devDependencies:
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.3.0_react@18.2.0
+  '@types/fabric': 4.5.12
   '@types/jest': 27.5.2
   '@types/react': 18.0.17
   '@types/react-pdf': 5.7.2
@@ -61,6 +71,31 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.15
     dev: true
+
+  /@ant-design/colors/6.0.0:
+    resolution: {integrity: sha512-qAZRvPzfdWHtfameEGP2Qvuf838NhergR35o+EuVyB5XvSA98xod5r4utvi4TJ3ywmevm290g9nsCG5MryrdWQ==}
+    dependencies:
+      '@ctrl/tinycolor': 3.4.1
+    dev: false
+
+  /@ant-design/icons-svg/4.2.1:
+    resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==}
+    dev: false
+
+  /@ant-design/icons/4.7.0_react@18.2.0:
+    resolution: {integrity: sha512-aoB4Z7JA431rt6d4u+8xcNPPCrdufSRMUOpxa1ab6mz1JCQZOEVolj2WVs/tDFmN62zzK30mNelEsprLYsSF3g==}
+    engines: {node: '>=8'}
+    peerDependencies:
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      '@ant-design/colors': 6.0.0
+      '@ant-design/icons-svg': 4.2.1
+      '@babel/runtime': 7.18.9
+      classnames: 2.3.1
+      rc-util: 5.23.0_react@18.2.0
+      react: 18.2.0
+    dev: false
 
   /@babel/code-frame/7.12.11:
     resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
@@ -1646,6 +1681,11 @@ packages:
       postcss-selector-parser: 6.0.10
     dev: true
 
+  /@ctrl/tinycolor/3.4.1:
+    resolution: {integrity: sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==}
+    engines: {node: '>=10'}
+    dev: false
+
   /@eslint/eslintrc/0.4.3:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -2125,6 +2165,240 @@ packages:
       source-map: 0.7.4
     dev: true
 
+  /@react-pdf-viewer/attachment/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-qNzhOnyMfoRA+8uJOgxSVvix+yQKzDCEur7jLVQbqnvyu94k6hZI9h+JVC5TAb5SQ7q/AdVT7Upc6ZH9ayhUQQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/bookmark/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-pgFzlh8EzMICb7McIi0GiWwuXsc/ooSc4KTbb0NZaMHpT0LS36jYKgKBNIv9xgzhRu8Qbs0oJmN9LRbzzAoAJw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/core/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-mMuG+bBNG+XdhK5QfdiC7h0wkXlleKCkGUmz53QIw/56ppmwTTqvK5u5JeAo/Tr7vS7wHpAgp26qCxL6NUHa4Q==}
+    peerDependencies:
+      pdfjs-dist: ^2.6.347
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@react-pdf-viewer/default-layout/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-JNXF5idSf5owcWgRXTLPBGHa1jHjUfDZjvUIK8HQACBWYVf8HqX1hoA8OwfcmSVdvyikfCohTg2nXwBVY7mDEw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/attachment': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/bookmark': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/thumbnail': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/toolbar': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/full-screen/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-hBtdAIAkm3I8rhjWAivWAonect1tIdiBOY4ufXaTXapnLiTR/0qh+e5xNF7d9/viLfMeTl8aEpLkzhU5B4GWrw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/get-file/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-mB94ryiiSud2moG0IFItzblgsB3H4VyfovHSVaqgSBabWjCsJSnk53Y81wuxtGY2goTfNcei93rso02ymj9R/w==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/locales/1.0.0:
+    resolution: {integrity: sha512-Q4ZGs4gQKFUk85hiDdPIEb4jHPTUdkPj9KZCZWpQZdKC37mkh/4EBZqMEUaYtm9lGuIEK3dE7oLAz/vxEMgvzg==}
+    dev: false
+
+  /@react-pdf-viewer/open/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-hB4Y85eWTAR6I3jjy1klC3u1kq95shzcMKt33N2R+yrzxpcp56GIJbavVY5C4hEFMwpmzKaUJ0CwV9nb75b1gw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/page-navigation/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-dtq6qCyfaCBXycBf+71PmK68OuFuTa4irbTiWD5+NY2LbWZW4+J5Talo+RuMr8fFPGPifi/Le0rdi7WPZLWNzA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/print/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-C+cKpjNtewahVLX/boIUsGD09/MZ27d6j66DRlef/C51zViFNwyxVaKfyspu79zZVWCeaShp5o4w/FCvb1rzvQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/properties/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-ZxvZ0DZy4mvxo36vDhNVBlQ1NaVuNXKNa1QsdwMg9kNXM1mKNmXlEzyQidx1R2CDex9N8nqLrNgHisXdtJySUA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/rotate/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-AMCy4hJLuHTbtEhgIJKpJn/qF8Nq+0xKPB0JpAQPNMzi3rG4GMBdPM8EtfyiyN/7K/cfw+WPVCiGKYSMKwWk0A==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/scroll-mode/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-GkOxElu9aN2o7XX9YhviFTGnhuHB391uqf4zYWT845Z4iBj+ZlchmorFMg1HKR0ym59kzKzkhj9T+R9BAGQT0A==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/search/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-5Sbeok3DL8BV8v/pl80kQQi6PqUJMobrAp6gcDKkJM1Y5HRH0B7/tzhY9ztAv4O+2RcqA4ODvKQZNeLnooxrYA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/selection-mode/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-lM8HjFHecU53yqVtFX7ZORYzoR9aGwxZj1lQDaX6CwpYlM4IdOg11nfkgg0Gxyw8mrF3uCko7USEfSy38IbBog==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/theme/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-/ftM+8PeD1yyT8IvPIZDjCqrpHwO1LS8OvQzRpHK2gTUFqPMFCfVwb6ukaav/aTMav/1Un5TVK/vp50RsAVgYA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/thumbnail/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-+NEoBRQI7h64Gm5vyRnJfYYCWqDaPcRd6ihQowauLjdJnbAWpKy1PYs/YGxzICCMo3p8qWIZJbyfS2XaA+q+SQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/toolbar/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-Gic7tSB68/ikTCKU2Rd7HuM65N6J9k708VGgQ1mj5dCpJvi+1fCTfuP7huF/T5cjfzkCTHCWDLCU5GkSKE2OSQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/full-screen': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/get-file': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/open': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/page-navigation': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/print': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/properties': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/rotate': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/scroll-mode': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/search': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/selection-mode': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/theme': 3.7.0_react@18.2.0
+      '@react-pdf-viewer/zoom': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
+  /@react-pdf-viewer/zoom/3.7.0_react@18.2.0:
+    resolution: {integrity: sha512-EP95GvUDliJxvE5HcNMZAaqeTqs51SBl8ZDmyOEjkP3P67xMenKOEPXFyVhrqXnN0GMNv0TO2r8AVIOznwGgEQ==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@react-pdf-viewer/core': 3.7.0_react@18.2.0
+      react: 18.2.0
+    transitivePeerDependencies:
+      - pdfjs-dist
+    dev: false
+
   /@rushstack/node-core-library/3.45.6:
     resolution: {integrity: sha512-RKGjkakEPcc5em1Dej6ql8OQobofp1IPKUDU2angme5XH7BFJzL5CAuU4zxIXaS8IT5HUV3WXd/GIkPAnrKNyw==}
     dependencies:
@@ -2450,6 +2724,10 @@ packages:
 
   /@types/estree/1.0.0:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
+    dev: true
+
+  /@types/fabric/4.5.12:
+    resolution: {integrity: sha512-rhRMpy+LMrRyxsDEjD78N48Qo+v7t1GEQvaEz8sm5efNsV+p4CHQCnN2wvgIyqPAIkiAGPPwSfVIBgluQP89Aw==}
     dev: true
 
   /@types/glob/7.2.0:
@@ -4423,7 +4701,6 @@ packages:
 
   /classnames/2.3.1:
     resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
-    dev: true
 
   /clean-regexp/1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
@@ -11571,7 +11848,6 @@ packages:
       react: 18.2.0
       react-is: 16.13.1
       shallowequal: 1.1.0
-    dev: true
 
   /rc-virtual-list/3.4.8_react@18.2.0:
     resolution: {integrity: sha512-qSN+Rv4i/E7RCTvTMr1uZo7f3crJJg/5DekoCagydo9zsXrxj07zsFSxqizqW+ldGA16lwa8So/bIbV9Ofjddg==}
@@ -12418,7 +12694,6 @@ packages:
 
   /shallowequal/1.1.0:
     resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
-    dev: true
 
   /shebang-command/1.2.0:
     resolution: {integrity: sha512-EV3L1+UQWGor21OmnvojK36mhg+TyIKDh3iFBKBohr5xeXIhNBcx8oWdgkTEEQ+BEFFYdLRuqMfd5L84N1V5Vg==}
@@ -13529,6 +13804,7 @@ packages:
   /unified/8.4.2:
     resolution: {integrity: sha512-JCrmN13jI4+h9UAyKEoGcDZV+i1E7BLFuG7OsaDvTXI5P0qhHX+vZO/kOhz9jn8HGENDKbwSeB0nVOg4gVStGA==}
     dependencies:
+      '@types/unist': 2.0.6
       bail: 1.0.5
       extend: 3.0.2
       is-plain-obj: 2.1.0
@@ -13539,6 +13815,7 @@ packages:
   /unified/9.2.2:
     resolution: {integrity: sha512-Sg7j110mtefBD+qunSLO1lqOEKdrwBFBrR6Qd8f4uwkhWNlbkaqwHse6e7QvD3AP/MNoJdEDLaf8OxYyoWgorQ==}
     dependencies:
+      '@types/unist': 2.0.6
       bail: 1.0.5
       extend: 3.0.2
       is-buffer: 2.0.5

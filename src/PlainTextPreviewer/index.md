@@ -2,7 +2,7 @@
 
 ```tsx
 import React from 'react';
-import { PlainTextPreviewer } from 'files-previewer';
+import { PlainTextPreviewer } from '@wongchisum/files-previewer';
 
 const link = '/textApi/home/down/txt/id/31878';
 

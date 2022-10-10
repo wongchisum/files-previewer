@@ -1,6 +1,6 @@
 {
   "name": "@wongchisum/files-previewer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -29,6 +29,10 @@
     ]
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@react-pdf-viewer/core": "^3.7.0",
+    "@react-pdf-viewer/default-layout": "^3.7.0",
+    "@react-pdf-viewer/locales": "^1.0.0",
     "@shirai91/react-pdf-forked": "^5.7.6",
     "detect-file-encoding-and-language": "^2.2.2",
     "docx-preview": "^0.1.11",
@@ -39,6 +43,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^13.0.0",
+    "@types/fabric": "^4.5.12",
     "@types/jest": "^27.0.3",
     "@types/react": "^18.0.17",
     "@types/react-pdf": "^5.7.2",

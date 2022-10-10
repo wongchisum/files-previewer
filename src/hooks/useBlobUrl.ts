@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 
-const headers = new Headers()
-headers.append("Access-Control-Allow-Origin","*")
-headers.append("Content-Type","application/json;charset=UTF-8")
-
+const headers = new Headers();
+headers.append('Access-Control-Allow-Origin', '*');
+headers.append('Content-Type', 'application/json;charset=UTF-8');
 
 // 请求url，转化为blob和附件的url
 export function useBlobUrl(link: string) {
@@ -13,9 +12,9 @@ export function useBlobUrl(link: string) {
   useEffect(() => {
     link &&
       fetch(link, {
-        mode:"no-cors",
-        headers:headers,
-        credentials: 'include'
+        mode: 'no-cors',
+        headers: headers,
+        credentials: 'include',
       })
         .then((response) => {
           return response.blob();
