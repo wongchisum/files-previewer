@@ -6,7 +6,7 @@
  */
 import React from 'react';
 import type { ReactElement } from 'react';
-import styles from './index.less';
+import './index.less';
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import type { ToolbarProps, ToolbarSlot } from '@react-pdf-viewer/default-layout';
@@ -55,18 +55,18 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
         } = slots;
 
         return (
-          <div className={styles.toolbar}>
-            <div className={styles.container}>
+          <div className={'toolbar'}>
+            <div className={'container'}>
               {filename && (
-                <div className={styles.fileInfo}>
-                  <span className={styles.filename} title={filename}>
+                <div className={'fileInfo'}>
+                  <span className={'filename'} title={filename}>
                     {filename.replace(/\.pdf$/, '')}
                   </span>
-                  <span className={styles.suffix}>.pdf</span>
+                  <span className={'suffix'}>.pdf</span>
                 </div>
               )}
 
-              <div className={styles.pageInfo}>
+              <div className={'pageInfo'}>
                 <div>
                   <span>第</span>
                   <CurrentPageLabel />页<span> / </span>
@@ -76,7 +76,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
               </div>
               <EnterFullScreen>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <FullscreenOutlined />
                     <span>全屏</span>
                   </div>
@@ -84,7 +84,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
               </EnterFullScreen>
               <ZoomOut>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <ZoomOutOutlined />
                     <span>缩小</span>
                   </div>
@@ -92,7 +92,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
               </ZoomOut>
               <ZoomIn>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <ZoomInOutlined />
                     <span>放大</span>
                   </div>
@@ -101,7 +101,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
 
               <GoToPreviousPage>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <ArrowLeftOutlined onClick={props.onClick} />
                     <span>上一页</span>
                   </div>
@@ -110,7 +110,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
 
               <GoToNextPage>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <ArrowRightOutlined />
                     <span>下一页</span>
                   </div>
@@ -119,7 +119,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
 
               <Print>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <PrinterOutlined />
                     <span>打印</span>
                   </div>
@@ -128,7 +128,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
 
               <Download>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <DownloadOutlined />
                     <span>下载</span>
                   </div>
@@ -136,7 +136,7 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
               </Download>
               <Rotate direction={'Forward' as any}>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <RotateRightOutlined />
                     <span>顺时针旋转</span>
                   </div>
@@ -144,18 +144,18 @@ const renderToolbar = (Toolbar: ToolBarType, filename?: string, onClose?: () => 
               </Rotate>
               <Rotate direction={'Backward' as any}>
                 {(props) => (
-                  <div className={styles.icon} onClick={props.onClick}>
+                  <div className={'icon'} onClick={props.onClick}>
                     <RotateLeftOutlined />
                     <span>逆时针旋转</span>
                   </div>
                 )}
               </Rotate>
-              <div className={styles.zoom}>
+              <div className={'zoom'}>
                 <Zoom />
               </div>
             </div>
             <div>
-              <CloseOutlined className={styles.close} onClick={() => onClose?.()} />
+              <CloseOutlined className={'close'} onClick={() => onClose?.()} />
             </div>
           </div>
         );
@@ -171,7 +171,7 @@ export default function NextPDFPreviewer(props: PDFPreviewerProps) {
   });
 
   return (
-    <div className={styles.wrapper}>
+    <div className={'wrapper'}>
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
         {visible && (
           <Viewer
